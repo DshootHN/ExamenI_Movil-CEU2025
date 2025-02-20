@@ -11,7 +11,7 @@ const {login} = useAuth();
 
     return (
         <View style={styles.container}>
-          <Text style={styles.userText}>Usuario actual: {email || 'Ninguno'}</Text>
+          {/* <Text style={styles.userText}>Usuario actual: {email || 'Ninguno'}</Text> */}
           <Text style={styles.title}>Iniciar Sesión</Text>
           <TextInput style={styles.input} placeholder="Email" value={email} onChangeText={setEmail} />
           <Button title="Ingresar" onPress={()=>{login(email); router.replace('/home')}} />
