@@ -11,6 +11,7 @@ import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function ProtectedLayout() {
     const { isAllowed } = useAuth();
@@ -40,14 +41,14 @@ export default function ProtectedLayout() {
         name="listTarea"
         options={{
           title: 'Listar Tareas',
-          tabBarIcon: ({ color }) => <IconSymbol size={23} name="newspaper" color={color} />,
+          tabBarIcon: ({ color }) => <Ionicons size={23} name="newspaper" color={color} />,
         }}
       />
       <Tabs.Screen
         name="addTarea"
         options={{
           title: 'Agregar Tarea',
-          tabBarIcon: ({ color }) => <IconSymbol size={23} name="paperclip" color={color} />,
+          tabBarIcon: ({ color }) => <Ionicons size={23} name="push" color={color} />,
         }}
       />
     </Tabs>
