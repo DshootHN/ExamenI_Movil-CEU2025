@@ -1,4 +1,5 @@
 import { useAuth } from "../../contexts/AuthContext";
+import { TareasProvider } from "@/contexts/TareaContext";
 import { Redirect, Stack } from "expo-router";
 
 import { Tabs } from 'expo-router';
